@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+@media(max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+.small-icon {
+  width: 42px;
+  height: 42px;
+}

@@ -1,0 +1,35 @@
+.second--section {
+  background: $lightGrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+  .title {
+    font-weight: 400;
+    font-size: $text-xl;
+    color: $darkGrey;
+    text-transform: capitalize;
+    &--small {
+      font-size: $text-l;
+      margin: 20px 0;
+    }
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: $text-m;
+    color: $greySection;
+    padding: 10px 20px 30px;
+  }
+  .card-container {
+    display: flex;
+  }
+}
+@media(max-width: 1200px) {
+  .second--section {
+    .card-container {
+      flex-direction: column;
+    }
+  }
+}

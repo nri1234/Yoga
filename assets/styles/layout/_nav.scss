@@ -1,0 +1,21 @@
+.header {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  &__logo{
+    max-width: 160px;
+  }
+  .icon {
+    height: 40px;
+    max-width: 160px;
+  }
+}
+@media(max-width: 1024px) {
+  .header {
+    &__logo{
+     margin-left: 2em;
+    }
+    .icon {
+    }
+  }
+}
