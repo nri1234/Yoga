@@ -1,35 +1,32 @@
-.second--section {
-  background: $lightGrey;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-  text-align: center;
-  .title {
-    font-weight: 400;
-    font-size: $text-xl;
-    color: $darkGrey;
-    text-transform: capitalize;
-    &--small {
-      font-size: $text-l;
-      margin: 20px 0;
+#ourTeam {
+  .container-fluid {
+    background: #fff;
+    display: inline-block;
+    margin-top: -2em;
+    .half-circle {
+      background-color: #e9f2f2;
+      width: 1400px;
+      height: 200px;
+      border-radius: 50% / 100%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      color: #70577d!important;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 0 3px #70577d;
+      .slogan {
+        font-weight: 300;
+        font-size: 2em;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 2.25em;
+      }
     }
   }
-  .subtitle {
-    font-weight: 400;
-    font-size: $text-m;
-    color: $greySection;
-    padding: 10px 20px 30px;
-  }
-  .card-container {
-    display: flex;
-  }
+
 }
-@media(max-width: 1200px) {
-  .second--section {
-    .card-container {
-      flex-direction: column;
-    }
-  }
+.bottom {
+  border-bottom-left-radius: $size * 2;
+  border-bottom-right-radius: $size * 2;
 }
