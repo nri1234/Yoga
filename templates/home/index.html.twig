@@ -1,132 +1,29 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Join to Yoga session{% endblock %}
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+
 </style>
-    <section class="header">
-        <div class="top-bar container">
-            <div class="row">
-                <div class="col-6 col-sm-6 text-left">
-                    <a href="#">
-                        <img src="images/logo.png" alt="logo"/>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-6 text-right">
-                    <a href="#"><span>18 February 2010</span> </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <nav id="navbar" class="navbar navbar-light bg-light mt-3">
+        <a class="ml-5 navbar-brand" href="#">
+            <img src="{{ asset('build/img/logo.png') }}" width="auto" height="70" alt="logo">
+        </a>
 
-    <section class="first--section">
-        <h1 class="title">Heading</h1>
-        <p class="subtitle">Lorem ipsum dolor sit amet, consect etur adipiscing elit.</p>
-        <div class="container">
-            <div class="">
-                <div class="card">
-                    <h2 class="title">heading</h2>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <svg class="small-icon" aria-hidden="true" focusable="false">
-                        <use xlink:href="svg/sprite.svg#wordpress"></use>
-                    </svg>
-                </div>
-                <div class="card">
-                    <h2 class="title">heading</h2>
-                    <p>Lorem ipsum dolor sit amet, consect
-                        etur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus.</p>
-                </div>
-                <div class="card">
-                    <h2 class="title">Ultra Mega Super Long  Heading</h2>
-                    <p>Lorem ipsum dolor sit amet, consect
-                        etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="card">
-                    <h2 class="title">heading</h2>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <svg class="small-icon" aria-hidden="true" focusable="false">
-                        <use xlink:href="svg/sprite.svg#wordpress"></use>
-                    </svg>
-                </div>
-                <div class="card">
-                    <h2 class="title">Ultra Mega Super Long  Heading</h2>
-                    <p>Lorem ipsum dolor sit amet, consect
-                        etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="card">
-                    <h2 class="title">heading</h2>
-                    <p>Lorem ipsum dolor sit amet, consect
-                        etur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus.</p>
-                </div>
+        <div class="dropdown mr-5">
+            <button class="nav-icon btn btn-secondary dropdown-toggle mt-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item mt-4" href="#">Class</a>
+                <a class="dropdown-item mt-4" href="#">Promo</a>
+                <a class="dropdown-item mt-4" href="#">Online</a>
+                <a class="dropdown-item mt-4" href="#">Contact</a>
             </div>
         </div>
-    </section>
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    </nav>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/Programowanie/Yoga/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/Programowanie/Yoga/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
-    <form class="needs-validation" novalidate>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="validationCustom01">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="validationCustom03">City</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-                <div class="invalid-feedback">
-                    Please provide a valid city.
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom04">State</label>
-                <select class="custom-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                    Please select a valid state.
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" required>
-                <div class="invalid-feedback">
-                    Please provide a valid zip.
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                    Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-    </form>
 {% endblock %}

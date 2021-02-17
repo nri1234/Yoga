@@ -1,21 +1,60 @@
-.header {
-  height: 84px;
-  display: flex;
-  align-items: center;
-  &__logo{
-    max-width: 160px;
+#navbar {
+  .btn-secondary {
+    border: none!important;
+    background: none;
   }
-  .icon {
-    height: 40px;
-    max-width: 160px;
+  .dropdown-toggle::after {
+    content: none;
   }
-}
-@media(max-width: 1024px) {
-  .header {
-    &__logo{
-     margin-left: 2em;
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+    top: auto;
+    border-radius: 0;
+    box-shadow: 0 0 5px;
+    min-width: 220px;
+    min-height: 285px;
+    .dropdown-item {
+     border-bottom: 3px solid #70577d;
+      margin: 0 2.5em;
+      width: 60%;
+      padding: 0 .5em .5em 0;
     }
-    .icon {
-    }
+  }
+  .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+  }
+  .btn-secondary:focus, .btn-secondary.focus {
+    box-shadow: none;
+  }
+  .nav-icon {
+    width: 58px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .nav-icon span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #70577d;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+  }
+
+  .nav-icon span:nth-child(1) {
+    top: 0;
+  }
+
+  .nav-icon span:nth-child(2) {
+    top: 10px;
+    height: 3px;
+  }
+
+  .nav-icon span:nth-child(3) {
+    top: 18px;
   }
 }
