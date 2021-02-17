@@ -13,20 +13,45 @@
       color: #70577d!important;
       text-transform: uppercase;
       letter-spacing: 1px;
-      box-shadow: 0 0 3px #70577d;
+      box-shadow: 0 0 1px #70577d;
+      font-family: "Open Sans", sans-serif;
       .slogan {
         font-weight: 300;
-        font-size: 2em;
+        font-size: 2.25em;
       }
       .title {
         font-weight: 700;
-        font-size: 2.25em;
+        font-size: 2.5em;
       }
     }
+    .card-body {
+      color: #70577d!important;
+      letter-spacing: 1px;
+      .card-title,
+      .day {
+        font-weight: 700;
+        .time {
+          font-weight: 300;
+        }
+      }
+      .card-text {
+        font-size: 1em;
+      }
+    }
+    .button-more {
+      border-radius: 25px;
+      padding: 15px 45px;
+      font-size: 1em;
+      background: #70577d;
+      text-transform: uppercase;
+      border: none;
+      letter-spacing: 2px;
+      box-shadow: 0 0 2px #70577d
+    }
+    hr {
+      border: 0;
+      border-top: 2px solid #70577d;
+    }
   }
+}
 
-}
-.bottom {
-  border-bottom-left-radius: $size * 2;
-  border-bottom-right-radius: $size * 2;
-}
