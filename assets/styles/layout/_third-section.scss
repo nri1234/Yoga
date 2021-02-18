@@ -1,0 +1,65 @@
+#yoga-workshop  {
+  .container-fluid {
+    background-color: #fff;
+    color: $main-text;
+    font-family: "Open Sans", sans-serif;
+    margin-top: -1em;
+    .row   {
+      line-height: 45px;
+      .slogan {
+        font-size: 2.75em;
+        text-transform: uppercase;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 2.5em;
+      }
+      .day {
+        font-weight: 700;
+        font-size: 1.5em;
+      }
+      .time {
+        font-size: 1.75em;
+      }
+      .extra-padding{
+        padding-top: 25%;
+        .vertical-text-lg {
+          text-orientation: upright;
+          writing-mode: vertical-lr;
+          letter-spacing: 15px;
+        }
+      }
+      .vertical-text-sm {
+        text-orientation: upright;
+        writing-mode: vertical-rl;
+        letter-spacing: 15px;
+      }
+    }
+      form {
+      .message-box {
+        border: 2px solid $main-text!important;
+      }
+    }
+  }
+}
+@media(max-width: 767px) {
+  #yoga-workshop {
+    .sm-image {
+      margin-top: 0!important;
+    }
+    .half-circle-up {
+      width: 100%;
+      height: auto!important;
+      border: none!important;
+      border-bottom: 0;
+    }
+  }
+  form {
+    margin: 0 1em!important;
+  }
+  .form-row {
+    .p-mb {
+      padding: 1em!important;
+    }
+  }
+}

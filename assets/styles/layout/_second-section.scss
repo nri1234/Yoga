@@ -3,18 +3,6 @@
     background: #fff;
     display: inline-block;
     margin-top: -2em;
-    .half-circle {
-      background-color: #e9f2f2;
-      width: 1400px;
-      height: 200px;
-      border-radius: 50% / 100%;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      color: #70577d!important;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      box-shadow: 0 0 1px #70577d;
-      font-family: "Open Sans", sans-serif;
       .slogan {
         font-weight: 300;
         font-size: 2.25em;
@@ -25,7 +13,7 @@
       }
     }
     .card-body {
-      color: #70577d!important;
+      color: $main-text!important;
       letter-spacing: 1px;
       .card-title,
       .day {
@@ -33,25 +21,29 @@
         .time {
           font-weight: 300;
         }
-      }
       .card-text {
         font-size: 1em;
       }
     }
-    .button-more {
-      border-radius: 25px;
-      padding: 15px 45px;
-      font-size: 1em;
-      background: #70577d;
-      text-transform: uppercase;
-      border: none;
-      letter-spacing: 2px;
-      box-shadow: 0 0 2px #70577d
-    }
     hr {
       border: 0;
-      border-top: 2px solid #70577d;
+      border-top: 2px solid $main-text;
     }
   }
 }
-
+@media(max-width: 767px) {
+    .slogan {
+      font-size: 1.25em!important;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 1.5em!important;
+    }
+  .row {
+    width: 100%!important;
+  }
+  .card-body {
+    margin: 0!important;
+    padding: .5em 1em!important;
+  }
+}

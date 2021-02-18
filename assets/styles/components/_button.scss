@@ -1,0 +1,14 @@
+.button-more {
+  border-radius: 25px;
+  padding: 15px 45px;
+  font-size: 1em;
+  background: $main-text;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 2px;
+  box-shadow: 0 0 2px $main-text;
+  &:hover {
+    background: rgba(112,87,125, 0.6) !important;
+  }
+}
+

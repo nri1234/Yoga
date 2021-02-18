@@ -1,0 +1,35 @@
+#footer {
+  .container-fluid {
+    background-color: #fff;
+    color: $main-text!important;
+    margin-top: -1em;
+    .footer {
+      .text {
+        font-size: 1.25em;
+      }
+      width: 70%;
+      .footer-list-group {
+        font-family: "Open Sans", sans-serif;
+        .list-item {
+          text-decoration: none;
+          padding: .25em 0;
+          color: $main-text;
+          font-size: 1em;
+            &:hover {
+              color: rgba(112,87,125, 0.6) !important;
+            }
+        }
+      }
+    }
+  }
+  .hidden-lg {
+    display: none;
+  }
+}
+@media(max-width: 767px) {
+  .hidden-lg {
+    display: block!important;
+    width: 100% !important;
+    text-align: center!important;
+  }
+}

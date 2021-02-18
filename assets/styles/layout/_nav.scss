@@ -12,13 +12,18 @@
     top: auto;
     border-radius: 0;
     box-shadow: 0 0 5px;
-    min-width: 220px;
-    min-height: 285px;
+    min-width: 290px;
+    min-height: 324px;
+    font-size: 1.25em;
     .dropdown-item {
      border-bottom: 3px solid #70577d;
       margin: 0 2.5em;
       width: 60%;
       padding: 0 .5em .5em 0;
+      &:hover {
+        color: rgba(112,87,125, 0.6) !important;
+        background: inherit!important;
+      }
     }
   }
   .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
@@ -56,5 +61,17 @@
 
   .nav-icon span:nth-child(3) {
     top: 18px;
+  }
+}
+@media(max-width: 767px) {
+  .navbar-brand {
+    margin-left: 0!important;
+  }
+  .dropdown {
+    margin-right: 0!important;
+  }
+  .logo {
+    width: 50%;
+    height: auto!important;
   }
 }

@@ -22,3 +22,29 @@ p {
   width: 42px;
   height: 42px;
 }
+.p-mb {
+  padding: 1em!important;
+}
+.force-w-50 {
+  width: 50%;
+}
+@media(max-width: 767px) {
+  .mobile-center {
+    justify-content: center!important;
+    text-align: center!important;
+  }
+  .w-33 {
+    width: 33% !important;
+  }
+  .mb-w-100 {
+    width: 100% !important;
+  }
+}
+@media(max-width: 620px) {
+  .hide-sm {
+    display: none!important;
+  }
+  .w-33 {
+    width: 33% !important;
+  }
+}

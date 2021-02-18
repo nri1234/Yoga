@@ -1,0 +1,9 @@
+.half-circle-up {
+  width: 100%;
+  height: 350px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 30px solid $semi-circle;
+  border-bottom: 0;
+}

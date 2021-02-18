@@ -8,8 +8,14 @@
 @import 'layout/_nav.scss';
 @import 'layout/_first-section.scss';
 @import 'layout/_second-section.scss';
+@import 'layout/_third-section.scss';
+@import 'layout/_footer.scss';
 
-@import 'components/_card.scss';
+@import 'components/_form';
+@import 'components/_button.scss';
+@import 'components/_half-circle-down.scss';
+@import 'components/_half-circle-up.scss';
+
 body {
     width: 100%;
     font-family: 'Open Sans', sans-serif;

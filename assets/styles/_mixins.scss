@@ -48,10 +48,9 @@
     }
   }
 }
-
 @mixin circle($radius) {
   border-radius: 50%;
   height: $radius;
   width: $radius;
 }
-$size: 320px;
+
